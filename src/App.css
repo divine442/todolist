@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #8758ff;
+  background: linear-gradient(125deg, #153677, #4e085f);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,10 +25,10 @@ h1 {
 }
 
 .TodoWrapper {
-  background: #1A1A40;
+  background: black;
   margin-top: 5rem;
   padding: 2rem;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .TodoForm {
@@ -39,12 +39,13 @@ h1 {
 .todo-input {
   outline: none;
   background: none;
-  border: 1px solid #8758ff;
+  border: 1px solid rgb(208, 93, 39);
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
   width: 300px;
   color: #fff;
+  border-radius: 12px;
 }
 
 .todo-input::placeholder {
@@ -52,18 +53,20 @@ h1 {
 }
 
 .todo-btn {
-  background: #8758ff;
+  background:  rgb(208, 93, 39);
   color: #fff;
   border: none;
   padding: 0.55rem;
   cursor: pointer;
+  margin-left: 20px;
+  border-radius: 10px;
 }
 
 .Todo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #8758ff;
+  background:  rgb(208, 93, 39);
   color: #fff;
   padding: 0.75rem 1rem;
   border-radius: 5px;
@@ -72,7 +75,9 @@ h1 {
 
 .fa-trash {
   margin-left: 0.75rem;
+  
 }
+
 
 .incompleted {
   color: #fff;
@@ -80,7 +85,7 @@ h1 {
 }
 
 .completed {
-  color: #c5aeff;
+  color: black;
   text-decoration: line-through;
   cursor: pointer;
 }
@@ -90,3 +95,21 @@ h1 {
   cursor: pointer;
 }
  
+@media only screen and (max-width:1000px){
+  
+  .TodoForm {
+    display: flex;
+    align-items: center;
+    
+  
+    
+  }
+  .todo-btn{
+    font-size: 10px;
+    padding: 7px;
+    margin-bottom: 18px;
+    width: 30%;
+    
+  }
+
+}
